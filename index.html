@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Terceiro Trimestre</title>
+    <title>Terceiro Trimestre</title>
     <script src="estudo.js"></script>
-    
+
 </head>
 <body>
-    
-   Valor: <input id="val" type="text"><br>
-   Juros: <input id="ju" type="text"><br>
-   Meses: <input id="mes" type="text"><br>
-   <button onclick="total()">Enviar</button>
-    
-   <br> <br> <br> <br> <br>
-   <span id="resultado"></span><br>
 
-    bimestre 1: <input id="n1" type="text"><br>
-    bimestre 2: <input id="n2" type="text"><br>
-    bimestre 3: <input id="n3" type="text"><br>
-    bimestre 4: <input id="n4" type="text"><br>
+capital: <input id="valor" type="text"> <br>
+taxa de juros: <input id="juros" type="text"> <br>
 
-    <button onclick="soma()">Soma das Notas</button>
-    <button onclick="média()">Média das Notas</button>
-    <button onclick="necessário()"> Necessário Para Passar</button>
-    
+quantidade meses: <input id="meses" type="text"> <br>
+
+<button onclick="total()">calcular</button>
+
+
+
+<br><br><br><br>
+<span id="resultado"></span><br><br>
+Bimestre 01: <input id="b1" type="text"> <br>
+Bimestre 02: <input id="b2" type="text"> <br>
+Bimestre 03: <input id="b3" type="text"> <br>
+Bimestre 04: <input id="b4" type="text"> <br>
+<button onclick="soma()">Soma Notas</button>
+<button onclick="media()">Media Notas</button>
+<button onclick="falta()">Falta Notas </button>
+
+
+
 </body>
 </html>
+
