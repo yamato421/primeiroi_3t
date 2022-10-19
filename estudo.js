@@ -40,7 +40,7 @@ function  total(){
 
     let t = document.getElementById("meses").value;
     let resultado = 0;
-    for(let m = 1; m < t; m++){
+    for(let m = 1; m <= t; m++){
         resultado = (val * ((ju/100)+1));
         val = resultado;
         document,write("MêS " + m + " valor de " + val + <br></br>);
@@ -91,3 +91,4 @@ function falta(){
     let n4 = document.getElementById("b4").value;
     let r = 240 - Number(n1) + Number(n2) + Number(n3) + Number(n4);
     document.getElementById("resultado").innerHTML = r;   
+}
