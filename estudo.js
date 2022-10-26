@@ -3,7 +3,9 @@
 // console.log("Eu estou no console.");
 let tabuada = 5;
 function alo(){
+
     let tabuada = document.getElementById("entrada").value;
+
     document.write("<h1>Tabuada do " + tabuada + "</h1>");
     document.write(tabuada + " x 1 = " + (tabuada*1)+"<br>");
     document.write(tabuada + " x 2 = " + (tabuada*2)+"<br>");
@@ -16,16 +18,14 @@ function alo(){
     document.write(tabuada + " x 9 = " + (tabuada*9)+"<br>");
     document.write(tabuada + " x 10 = " + (tabuada*10));
 }
-
+// for(inicio, validaçao, manutençao)
 function escreva(){
     for(var i=1; i <= 10; i++){
         for(var j = 1; j <=10; j++){
             document.write(i + " x " + j + " = " + (j*i)+"<br>");
         }
         document.write("<br>");
-
     }
-
 }
 
 function quadrado(){
@@ -33,65 +33,24 @@ function quadrado(){
         document.write("O quadrado de " + i + " é " + (i*i)+"<br>");
     }
 }
-
 function moeda(atual){
     return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 }
-function  total(){
+function total(){
     let val = document.getElementById("valor").value;
     let ju = document.getElementById("juros").value;
-
+    
     let t = document.getElementById("meses").value;
     let resultado = 0;
+    let saida = ""
     for(let m = 1; m <= t; m++){
         resultado = (val * ((ju/100)+1));
         val = resultado;
-        document,write("MêS " + m + " valor de " + moeda (val) + <br></br>);
+        saida += " mes " + m + " :"+ moeda(val)+ "<br>"
+        //document.write("Mês " + m + " valor de " + moeda(val) + "<br>");
     }
-
-
-    if(!Number(val)){
-        alert("O valor deve ser um número.");
-        document.getElementById("valor").value = "";
-        document.getElementById("valor").focus();
-        return
-    }
-
-    if(!Number(ju)){
-        alert("o valor do juro deve ser um número")
-        document.getElementById("juros").value = ""
-        document.getElementById("juros").focus();
-        }
-
-
-    let resultado = (val * ((ju/100)+1));
-    document.write("O total é de:" + moeda(resultado);
+    document.getElementById("mes").innerHTML =saida;
+    document.getElementById("resultado").innerHTML= "total "+moeda(resultado)
+    //document.write("O total é de: " + moeda(resultado) );
 }
-
-function soma(){
-    let n1 = document.getElementById("b1").value;
-    let n2 = document.getElementById("b2").value;
-    let n3 = document.getElementById("b3").value;
-    let n4 = document.getElementById("b4").value;
-    let r = Number(n1) + Number(n2) + Number(n3) + Number(n4);
-    document.getElementById("resultado").innerHTML = r;
-
-}
-
-function media(){
-    let n1 = document.getElementById("b1").value;
-    let n2 = document.getElementById("b2").value;
-    let n3 = document.getElementById("b3").value;
-    let n4 = document.getElementById("b4").value;
-    let r = Number(/n1) + Number(/n2) + Number(/n3) + Number(n4/);
-    document.getElementById("resultado").innerHTML = r; 
-}
-
-function falta(){
-    let n1 = document.getElementById("b1").value;
-    let n2 = document.getElementById("b2").value;
-    let n3 = document.getElementById("b3").value;
-    let n4 = document.getElementById("b4").value;
-    let r = 240 - Number(n1) + Number(n2) + Number(n3) + Number(n4);
-    document.getElementById("resultado").innerHTML = r;   
-}
+    
