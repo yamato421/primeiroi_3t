@@ -10,29 +10,15 @@
 
 </head>
 <body>
-<div class="calculadora">
-    capital: <input id="valor" type="text"> <br>
-taxa de juros: <input id="juros" type="text"> <br>
+  <div class="calculadora">
+  <span id="resultado">Total:0,0</span><br>
+  
+Valor: <input id="valor" type="text"> <br>
+Taxas de Juros: <input id="juros" type="text"> <br>
+Quantidade meses: <input id="meses" type="text"> <br>
+<button id="btnCalc" onclick="total()">Calcular</button>
 
-quantidade meses: <input id="meses" type="text"> <br>
-
-<button id="btnCalc" onclick="total()">calcular</button>
-
-</div>
-
-
-
-<br><br><br><br>
-<span id="resultado"></span><br><br>
-Bimestre 01: <input id="b1" type="text"> <br>
-Bimestre 02: <input id="b2" type="text"> <br>
-Bimestre 03: <input id="b3" type="text"> <br>
-Bimestre 04: <input id="b4" type="text"> <br>
-<button onclick="soma()">Soma Notas</button>
-<button onclick="media()">Media Notas</button>
-<button onclick="falta()">Falta Notas </button>
-
-
-
+  </div>
+    <span id="mes">Mês a Mẽs</span>
 </body>
 </html>
