@@ -1,17 +1,16 @@
-.Calculadora{
-   background-color: antiquewhite;
-   width: 200px;
-   padding: 10px;
+.calculadora {
+    background: blueviolet;
+    width: 200px;
+    padding: 10px;
+    color: whitesmoke;
 }
 
-#btnCalc {
-     background: bisque;
-     color: black;
-     padding: 2px;
+#btnCalc{
+    background: chartreuse;
+    color: black;
+    padding: 7px;
 }
-
 #btnCalc:hover {
-     background: burlywood;
-     color: black;
-     cursor: pointer;
+    background: green;
+    color: whitesmoke;
 }
