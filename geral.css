@@ -14,3 +14,9 @@
     background: green;
     color: whitesmoke;
 }
+.spResultado{
+    background: black;
+    color: yellow;
+    padding: 4px;
+    margin: 2px;
+}
